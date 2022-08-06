@@ -1,0 +1,14 @@
+# Load Pure
+fpath+=($HOME/.zsh/pure)
+
+autoload -U promptinit; promptinit
+prompt pure
+
+# Some aliases
+alias l='ls -oXh --color --show-control-chars $*'
+alias la='l -a'
+alias py=python
+
+# Set classic tab completion
+autoload -U compinit && compinit
+autoload -U bashcompinit && bashcompinit
